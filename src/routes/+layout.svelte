@@ -1,7 +1,6 @@
 <script>
     import NavigationBar from "../components/NavigationBar.svelte";
     import SocialMedia from "../components/SocialMedia.svelte";
-	import ThemeToggle from "../components/ThemeToggle.svelte";
 
     let screenHeight;
 	let screenWidth;
@@ -20,6 +19,5 @@
 {#if screenHeight > 740 && screenWidth < 600}
 	<footer>
 		<SocialMedia />
-        <ThemeToggle/>
 	</footer>
 {/if}
