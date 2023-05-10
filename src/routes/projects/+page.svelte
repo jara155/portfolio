@@ -20,7 +20,7 @@
 			image="project-icons/jajaskilltree.png"
 			title="SkillTree"
 			desc="Minecraft plugin adds Skilltree."
-			link=""
+			link="https://www.spigotmc.org/resources/1-13-1-19-jajaskilltree-%E2%9C%85-gui-custom-skills-%E2%9C%A8-customizable.109725/"
 			stitky={[["Java", "red"]]}
 		/>
 	</div>
