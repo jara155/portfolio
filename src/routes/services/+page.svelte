@@ -31,4 +31,9 @@
 </main>
 
 <style>
+	.columns {
+		display: flex;
+		align-items: center;
+		place-content: center;
+	}
 </style>

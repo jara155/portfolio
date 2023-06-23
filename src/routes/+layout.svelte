@@ -3,7 +3,6 @@
     import SocialMedia from "../components/SocialMedia.svelte";
 	import { page } from '$app/stores';   
 
-
     let screenHeight;
 	let screenWidth;
 </script>

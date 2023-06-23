@@ -107,8 +107,8 @@ body {
 
 main {
     /* width: 100%; */
-    margin: 0px auto;
-    max-width: 800px;
+    /* margin: 0px auto; */
+    /* max-width: 800px; */
 }
 
 footer {
@@ -142,6 +142,7 @@ p {
     display: flex;
     letter-spacing: .5px;
     font-size: 17px;
+    max-width: 450px;
     place-items: center;
     text-align: center;
     justify-content: center;

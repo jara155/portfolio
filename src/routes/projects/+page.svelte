@@ -6,7 +6,7 @@
 <main in:fade>
 	<h1 class="page-title">Projekty</h1>
 
-	<h2>Nedávné</h2>
+	<h2>Minecraft</h2>
 
 	<div in:fly={{ y: -20, delay: 250 }}>
 		<RowContainer
@@ -25,7 +25,7 @@
 		/>
 	</div>
 
-	<h2 in:fade={{ delay: 300 }}>Jsem nejvíc hrdý</h2>
+	<!-- <h2 in:fade={{ delay: 300 }}>Jsem nejvíc hrdý</h2>
 	<div in:fly={{ y: -20, delay: 400 }}>
 		<RowContainer
 			image="project-icons/jajasell.png"
@@ -49,7 +49,7 @@
 			image="project-icons/reminder.png"
 			stitky={[["Flutter"]]}
 		/>
-	</div>
+	</div> -->
 </main>
 
 <style></style>
