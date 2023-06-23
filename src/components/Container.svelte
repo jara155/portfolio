@@ -18,7 +18,7 @@
 </main>
 
 <style>
-	/* @media (max-width: 600px) {
+	@media (max-width: 600px) {
 		.container {
 			width: 100%;
 			max-width: 160px;
@@ -32,13 +32,13 @@
 	@media (min-width: 600px) {
 		.container {
 			margin: 7px;
-			width: 12em;
+			width: 15em;
 		}
 
 		h2 {
 			font-size: 25px;
 		}
-	} */
+	}
 
 	i {
 		font-size: 5em;

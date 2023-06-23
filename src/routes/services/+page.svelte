@@ -31,9 +31,11 @@
 </main>
 
 <style>
-	.columns {
-		display: flex;
-		align-items: center;
-		place-content: center;
+	@media (min-width: 600px) {
+		.columns {
+			display: flex;
+			align-items: center;
+			place-content: center;
+		}
 	}
 </style>
