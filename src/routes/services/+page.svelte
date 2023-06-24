@@ -8,24 +8,24 @@
 
 	<h3>
 		Jestli tě zaujala některá služba tak v <a href="/contact">Kontakt</a
-		> mně můžeš kontakovat.
+		> mě můžeš kontakovat.
 	</h3>
 
 	<div class="columns" in:fly={{ y: -20, delay: 250 }}>
 		<Container
 			image="fa-solid fa-mobile"
 			title="Mobile development"
-			desc=""
+			desc="Vytvařím mobilní aplikaci pomocí Flutteru, která bude pro Android"
 		/>
 		<Container
 			image="fa-solid fa-desktop"
 			title="Desktop development"
-			desc=""
+			desc="Vytvářím desktop aplikaci pomocí Flutteru, která bude na Windows, Linux"
 		/>
 		<Container
 			image="fa-solid fa-cube"
 			title="Minecraft Plugin development"
-			desc=""
+			desc="Vytvářím vlastní pluginy pro minecraft pomocí Javy na minecraft servery"
 		/>
 	</div>
 </main>

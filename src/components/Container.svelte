@@ -14,7 +14,7 @@
 		<i class={image} />
 	{/if}
 	<h2>{title}</h2>
-	<h3>{desc}</h3>
+	<h4>{desc}</h4>
 </main>
 
 <style>
@@ -45,18 +45,20 @@
 		color: #eeeeee;
 	}
 	h2 {
-		overflow-wrap: break-word;
-		max-lines: 2;
-		margin-left: 10px;
-		margin-right: 10px;
 		margin-top: 15px;
 		margin-bottom: 0px;
+		font-size: 23px;
 		color: #eeeeee;
 	}
 
-	h3 {
+	h4 {
 		margin-top: 0px;
 		color: #eeeeee;
+		padding-inline: 10px;
+		font-size: 16px;
+		text-align: center;
+		font-weight: 500;
+		margin-bottom: 10px;
 		overflow-wrap: break-word;
 	}
 </style>
