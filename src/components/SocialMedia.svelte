@@ -10,6 +10,9 @@
 	<a href="https://github.com/jara155" target="_blank">
 		<i class="fa-brands fa-github social-media" />
 	</a>
+	<a href="https://www.spigotmc.org/resources/authors/jara155.1187518/" target="_blank">
+		<img src="http://spigotmc.org/img/spigot.png" alt="spigot">
+	</a>
 </main>
 
 <style>
@@ -20,6 +23,10 @@
 		to {
 			opacity: 100%;
 		}
+	}
+
+	img {
+		width: 60px;
 	}
 /* 
 	.discord {
