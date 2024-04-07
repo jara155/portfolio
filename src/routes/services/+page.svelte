@@ -31,6 +31,10 @@
 </main>
 
 <style>
+	h1 {
+		color: var(--services-color);
+	}
+
 	@media (min-width: 600px) {
 		.columns {
 			display: flex;

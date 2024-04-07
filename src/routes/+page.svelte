@@ -1,17 +1,15 @@
 <script>
-	import { fade, fly, scale } from "svelte/transition";
-	import Container from "../components/Container.svelte";
+	import { fade, fly } from "svelte/transition";
 	import ContainerWithYear from "../components/ContainerWithYear.svelte";
 </script>
 
 <main>
 
 	<div class="paragh" in:fade={{delay: 50}}>
-		<h2 style="margin-top: 30px;">Kdo jsem?</h2>
+		<h2 style="margin-top: 10px;">Kdo jsem?</h2>
 		<p>
-			Jsem student střední školy IT, který má rád počítače zejména
-			programování desktopových a mobilních aplikací. Jsem introvert, nemám
-			problém se bavit s lidmi, ale před vícemi je problém. Jsem přátelský.
+			Jsem student střední školy IT, který má rád počítače. Zejména
+			programování desktopových/mobilních aplikací a minecraft pluginů. Začal jsem programovat v roce 2020 a tvořil jsem různé projekty. Jsem extrovertní introvert, záleží na lidech okolo.
 		</p>
 	</div>
 
@@ -20,8 +18,7 @@
 	<div class="paragh" in:fade={{delay: 200}}>
 		<h2>Oblíbené prog. jazyky&technologie</h2>
 		<p>
-			Zkusil jsem několik jazyků a technologií a některé mně zaujaly.
-			Například Flutter nebo Java nebo Svelte, mimochodem tento web je dělán pomocí Svelte.
+			Zkusil jsem několik jazyků a technologií a některé mně zaujaly. Například Flutter, Java, Sveltekit a Svelte, mimochodem tento web je dělán pomocí SvelteKit.
 		</p>
 	</div>
 
@@ -36,28 +33,29 @@
 				title="FiveM Developer"
 				year="21.6.2020-23.9.2021"
 				img="experiences/mjp.png"
-				desc="Měl jsem možnost být FiveM developer na serverech MiroGamingRP, MGRP a MJPRP. Zaměřoval na vývoj a optimalizaci serverů a tvorbu scriptů."
-				link="Web zrušen"
+				desc="Působil jsem jak FiveM developer na serverech MiroGamingRP, MGRP a MJPRP. Zaměřoval na vývoj a optimalizaci serverů a tvorbu vlastních scriptů."
+				color=#6a90f7
+				link=""
 			/>
 			<ContainerWithYear
 				title="FiveM Developer"
 				year="14.7.2022-24.9.2022"
 				img="experiences/nemesis.png"
-				desc="Působil jsem jako výpomoc na serveru NemesisRP. Mým úkolem bylo pomáhat developerům."
-				link="nemesisrp.eu"
+				desc="Působil jsem jako výpomoc na serveru NemesisRP. Mým úkolem bylo tvořit vlastní scripty a zlepšit hratelnost."
 				color="#fff94a"
+				link=""
 			/>
 			<ContainerWithYear
 				title="Minecraft Správce"
 				year="15.12.2022-26.1.2023"
 				img="experiences/basicland.png"
 				desc="Působil jsem jako Minecraft správce na serveru BasicLand. Mým úkolem byla správa a údržba serveru."
-				link="basicland.cz"
 				color="#ffca5f"
+				link="basicland.cz"
 			/>
 			<ContainerWithYear
 				title="Minecraft Developer"
-				year="10.5.2023-DNES"
+				year="10.5.2023-15.6.2023"
 				color="#ff4b7c"
 				img="experiences/altera.png"
 				desc="Působím na pozici Developer na Minecraft serveru AlteraCraft. Jako součást týmu se zaměřuji na vývoj a tvorbu custom pluginů."
@@ -82,6 +80,7 @@
 	@media (max-width: 600px) {
 		.zkusenosti {
 			display: grid;
+			gap: 20px;
 		}
 	}
 	

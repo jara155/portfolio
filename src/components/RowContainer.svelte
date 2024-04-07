@@ -10,7 +10,7 @@
 
 <main class="container">
 	<img src={image} alt="image of {title}" />
-	<div style="width: 100%;">
+	<div style="padding-left: 10px; width: 100%;">
 		<div style="display: flex; justify-content: space-between;">
 			<h1>{title}</h1>
 			<a href={link} target="_blank">
@@ -20,9 +20,12 @@
 		<h2>
 			{desc}
 		</h2>
-		{#each stitky as stitek}
-			<Stitek title={stitek[0]} bgColor={stitek[1]} />
-		{/each}
+
+		<div class="tags">
+			{#each stitky as stitek}
+				<Stitek title={stitek[0]} bgColor={stitek[1]} />
+			{/each}
+		</div>
 	</div>
 </main>
 
@@ -62,8 +65,15 @@
 		}
 	}
 
+	.tags {
+		display: flex;
+		gap: .5rem;
+	}
+
 	.container {
 		margin: auto;
+		border: 0;
+		border-left: var(--primary-color) 3px solid;
 		margin-bottom: 15px;
 		padding: 10px;
 		border-radius: 3px;
@@ -71,7 +81,9 @@
 
 	img {
 		width: 100px;
-		padding-right: 15px;
+		margin: auto;
+		margin-bottom: 5px;
+		border-radius: 8px;
 	}
 
 	a {

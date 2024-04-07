@@ -21,7 +21,7 @@
 	{#if screenHeight > 740 && screenWidth < 600 && $page.url.pathname != "/contact"}
 		<SocialMedia />
 	{/if}
-	<p> @ Copyright Jája 2023</p>
+	<p> @ Copyright Jája {new Date().getFullYear()}</p>
 	<p> All rights reserved</p>
 </footer>
 

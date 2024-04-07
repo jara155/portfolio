@@ -28,17 +28,17 @@
 				</li>
 				<li>
 					<a href="/services">
-						<h2>Služby</h2>
+						<h2 style="color:var(--services-color)">Služby</h2>
 					</a>
 				</li>
 				<li>
 					<a href="/projects">
-						<h2>Projekty</h2>
+						<h2 style="color:var(--projects-color)">Projekty</h2>
 					</a>
 				</li>
 				<li>
 					<a href="/contact">
-						<h2>Kontakt</h2>
+						<h2 style="color:var(--contact-color)">Kontakt</h2>
 					</a>
 				</li>
 			</ul>
@@ -55,7 +55,7 @@
 	@media (max-width: 600px) {
 		.navigation-sections {
 			padding: 0;
-			margin-top: 20px;
+			margin-top: 5px;
 			font-size: 13px;
 		}
 	}
@@ -65,6 +65,11 @@
 			animation: shine 200ms;
 			animation-fill-mode: forwards;
 		}
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
 	}
 
 	h1 {

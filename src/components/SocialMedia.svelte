@@ -11,7 +11,7 @@
 		<i class="fa-brands fa-github social-media" />
 	</a>
 	<a href="https://www.spigotmc.org/resources/authors/jara155.1187518/" target="_blank">
-		<img src="http://spigotmc.org/img/spigot.png" alt="spigot">
+		<img src="//static.spigotmc.org/img/spigot.png" alt="spigot">
 	</a>
 </main>
 
@@ -26,7 +26,7 @@
 	}
 
 	img {
-		width: 60px;
+		width: 56px;
 	}
 /* 
 	.discord {

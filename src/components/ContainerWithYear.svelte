@@ -7,7 +7,7 @@
 	export let link = "";
 </script>
 
-<main class="container" style="border-left-color: {color};">
+<main class="container" style="border-bottom-color: {color};">
 	<img src="{img}" alt="{title}-logo" />
 	<h2>{title}</h2>
 	<p>{year}</p>
@@ -21,15 +21,15 @@
 
 	.container {
 		width: 260px;
-		height: 345px;
+		height: 360px;
 		margin-inline: 10px;
 	}
 
 	@media (max-width: 600px) {
 		.container {
-			width: 95%;
+			width: 80%;
+			margin: auto;
 			padding: 0;
-			margin-bottom: 20px;
 		}
 		
 		p {

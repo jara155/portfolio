@@ -21,7 +21,9 @@
 	@media (max-width: 600px) {
 		.container {
 			width: 100%;
-			max-width: 160px;
+			margin: auto;
+			max-width: 70%;
+			margin-bottom: 20px;
 		}
 
 		h2 {
@@ -46,6 +48,7 @@
 	}
 	h2 {
 		margin-top: 15px;
+		margin-inline: 10px;
 		margin-bottom: 0px;
 		font-size: 23px;
 		color: #eeeeee;

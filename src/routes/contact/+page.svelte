@@ -12,11 +12,7 @@
 	<h1 class="page-title">Kontakt</h1>
 
 	<p in:fade={{ delay: 100 }}>
-		Můžete mě kontaktovat na Instagramu přes můj účet a zanechat mi zprávu nebo
-		komentář, nebo mi poslat soubor přes Direct Message (DM) nebo pomocí
-		Discordu můžete mi poslat přímou zprávu nebo se připojit na můj server.
-		Pokud preferujete e-mail, můžete mi poslat zprávu a připojit soubor jako
-		přílohu. Těším se na vaši zprávu!
+		Můžete mě kontaktovat na Instagramu přes můj účet a zanechat mi zprávu nebo komentář, nebo mi poslat soubor přes Direct Message (DM) nebo pomocí Discordu můžete mi poslat přímou zprávu nebo se připojit na můj server. Pokud preferujete e-mail, můžete mi poslat zprávu a připojit soubor jako přílohu. Těším se na vaši zprávu!
 	</p>
 
 	<br />
@@ -31,7 +27,7 @@
 		<Container
 			image={"fa-brands fa-discord"}
 			title={discord}
-			desc="jája#4224"
+			desc="jajaaa."
 		/>
 		<Container
 			image={"fa-brands fa-instagram"}
@@ -49,9 +45,13 @@
 </main>
 
 <style>
+	h1 {
+		color: var(--contact-color);
+	}
+
 	.grid {
-		justify-items: center;
-		grid-template-columns: repeat(2, 1fr);
+		justify-content: center;
+		grid-template-columns: 13rem 13rem;
 	}
 
 	@media (min-width: 600px) {

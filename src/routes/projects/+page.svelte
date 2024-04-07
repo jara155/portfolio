@@ -1,55 +1,53 @@
 <script>
 	import RowContainer from "../../components/RowContainer.svelte";
 	import { fly, fade } from "svelte/transition";
+
+	export let data;
 </script>
 
 <main in:fade>
 	<h1 class="page-title">Projekty</h1>
-
+  
 	<h2>Minecraft</h2>
 
 	<div in:fly={{ y: -20, delay: 250 }}>
-		<RowContainer
-			image="project-icons/jajasell.png"
-			title="Sell"
-			desc="Minecraft plugin adds Sell menu with offer and npcs."
-			link="https://www.spigotmc.org/resources/1-15-1-19-%EF%BC%84jajasell-%E2%9C%85-npcs-sellmenu-offer-menu-%E2%9C%A8-customizable.109528/"
-			stitky={[["Java", "red"]]}
-		/>
-		<RowContainer
-			image="project-icons/jajaskilltree.png"
-			title="SkillTree"
-			desc="Minecraft plugin adds Skilltree."
-			link="https://www.spigotmc.org/resources/1-13-1-19-jajaskilltree-%E2%9C%85-gui-custom-skills-%E2%9C%A8-customizable.109725/"
-			stitky={[["Java", "red"]]}
-		/>
+		{#each data.projects as project}
+			<RowContainer
+				image={"https://www.spigotmc.org/" + project.icon.url + project.icon.data}
+				title={project.name.split("|")[0].replace("[1.13-1.20]", "")}
+				desc={project.name.split("|")[1]}
+				link="https://www.spigotmc.org/resources/{project.id}/"
+				stitky={[
+					[project.testedVersions[0] + "-" + project.testedVersions[project.testedVersions.length-1], "green"],
+					[project.file.type, "red"],
+				]}
+			/>
+		{/each}
 	</div>
-
-	<!-- <h2 in:fade={{ delay: 300 }}>Jsem nejvíc hrdý</h2>
-	<div in:fly={{ y: -20, delay: 400 }}>
-		<RowContainer
-			image="project-icons/jajasell.png"
-			title="Sell"
-			desc="Minecraft plugin adds Sell menu with offer and npcs."
-			link="https://www.spigotmc.org/resources/1-15-1-19-%EF%BC%84jajasell-%E2%9C%85-npcs-sellmenu-offer-menu-%E2%9C%A8-customizable.109528/"
-			stitky={[["Java", "red"]]}
-		/>
+	
+	<h2>Flutter</h2>
+	<div in:fly={{ y: -20, delay: 250 }}>
 	
 		<RowContainer
 			title="Audio Player"
 			desc="Local audio player, that can play audio from external storage in mobile "
 			image="project-icons/audio-player.png"
 			link="https://github.com/jara155/Audio-Player"
-			stitky={[["Flutter"]]}
+			stitky={[["Mobile", "green"], ["Flutter"], [".dart","red"]]}
 		/>
 		<RowContainer
 			title="Reminder"
 			desc="Remake of Mac Reminders"
 			link="https://github.com/jara155/Reminder"
 			image="project-icons/reminder.png"
-			stitky={[["Flutter"]]}
+			stitky={[["Desktop", "green"], ["Flutter"], [".dart","red"]]}
 		/>
-	</div> -->
+	
+	</div>
 </main>
 
-<style></style>
+<style>
+	h1 {
+		color: var(--projects-color);
+	}
+</style>
