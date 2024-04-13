@@ -31,9 +31,15 @@
 			margin: auto;
 			padding: 0;
 		}
-		
+	
+		footer {
+			margin-bottom: 5px;
+		}
+
 		p {
+			margin: auto;
 			margin-block: 0;
+			width: 70%
 		}
 
 		img {
@@ -45,10 +51,10 @@
 		p {
 			width: 80%;
 		}
-	}
 
-	footer {
-		margin-bottom: 0;
+		footer {
+			margin-bottom: 0;
+		}
 	}
 
 	img {

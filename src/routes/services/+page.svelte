@@ -7,7 +7,7 @@
 	<h1 class="page-title">Služby</h1>
 
 	<h3>
-		Jestli tě zaujala některá služba tak v <a href="/contact">Kontakt</a
+		Jestli tě zaujala některá ze služeb, tak v <a href="/contact">Kontakt</a
 		> mě můžeš kontakovat.
 	</h3>
 
@@ -32,7 +32,9 @@
 
 <style>
 	h1 {
-		color: var(--services-color);
+		background-image: linear-gradient(var(--services-color), var(--hover-color));
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 
 	@media (min-width: 600px) {

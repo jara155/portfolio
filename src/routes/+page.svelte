@@ -6,7 +6,7 @@
 <main>
 
 	<div class="paragh" in:fade={{delay: 50}}>
-		<h2 style="margin-top: 10px;">Kdo jsem?</h2>
+		<h2 class="whoami" style="margin-top: 27px;">Kdo jsem?</h2>
 		<p>
 			Jsem student střední školy IT, který má rád počítače. Zejména
 			programování desktopových/mobilních aplikací a minecraft pluginů. Začal jsem programovat v roce 2020 a tvořil jsem různé projekty. Jsem extrovertní introvert, záleží na lidech okolo.
@@ -33,7 +33,7 @@
 				title="FiveM Developer"
 				year="21.6.2020-23.9.2021"
 				img="experiences/mjp.png"
-				desc="Působil jsem jak FiveM developer na serverech MiroGamingRP, MGRP a MJPRP. Zaměřoval na vývoj a optimalizaci serverů a tvorbu vlastních scriptů."
+				desc="Působil jsem jak FiveM developer na serverech MiroGamingRP, MGRP a MJPRP. Zaměřoval jsem se na vývoj a optimalizaci serverů a tvorbu vlastních scriptů."
 				color=#6a90f7
 				link=""
 			/>
@@ -58,7 +58,7 @@
 				year="10.5.2023-15.6.2023"
 				color="#ff4b7c"
 				img="experiences/altera.png"
-				desc="Působím na pozici Developer na Minecraft serveru AlteraCraft. Jako součást týmu se zaměřuji na vývoj a tvorbu custom pluginů."
+				desc="Působím na pozici Developer na Minecraft serveru AlteraCraft. Jako součást týmu se zaměřuji na vývoj a tvorbu custom pluginů a webu."
 				link="web.alteracraft.eu"
 			/>
 		</div>
@@ -71,8 +71,14 @@
 
 <style>
 
+	.whoami {
+		background-image: linear-gradient(var(--projects-color), var(--hover-color));
+		-webkit-background-clip: text;
+		color: transparent;
+	}
+
 	.zkusenosti-element {
-		margin-top: 10em;
+		margin-top: 9em;
 		margin-bottom: 1em;
 		/* background-color: #303030; */
 	}
@@ -86,9 +92,9 @@
 	
 	@media (min-width: 600px) {
 		.zkusenosti {
-			display: flex;
-			align-items: center;
-			place-content: center;
+			display: grid;
+			grid-template-columns: repeat(4, 17.5rem);
+			justify-content: center;
 		}
 	}
 

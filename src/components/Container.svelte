@@ -18,11 +18,12 @@
 </main>
 
 <style>
+
 	@media (max-width: 600px) {
 		.container {
-			width: 100%;
+			min-width: 80%;
+			max-width: 60%;
 			margin: auto;
-			max-width: 70%;
 			margin-bottom: 20px;
 		}
 

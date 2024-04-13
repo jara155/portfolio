@@ -33,14 +33,14 @@
 			desc="Local audio player, that can play audio from external storage in mobile "
 			image="project-icons/audio-player.png"
 			link="https://github.com/jara155/Audio-Player"
-			stitky={[["Mobile", "green"], ["Flutter"], [".dart","red"]]}
+			stitky={[["Mobile", "green"], [".dart","red"]]}
 		/>
 		<RowContainer
 			title="Reminder"
 			desc="Remake of Mac Reminders"
 			link="https://github.com/jara155/Reminder"
 			image="project-icons/reminder.png"
-			stitky={[["Desktop", "green"], ["Flutter"], [".dart","red"]]}
+			stitky={[["Desktop", "green"], [".dart","red"]]}
 		/>
 	
 	</div>
@@ -48,6 +48,8 @@
 
 <style>
 	h1 {
-		color: var(--projects-color);
+		background-image: linear-gradient(var(--projects-color), var(--hover-color));
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 </style>

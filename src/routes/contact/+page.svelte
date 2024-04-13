@@ -12,7 +12,7 @@
 	<h1 class="page-title">Kontakt</h1>
 
 	<p in:fade={{ delay: 100 }}>
-		Můžete mě kontaktovat na Instagramu přes můj účet a zanechat mi zprávu nebo komentář, nebo mi poslat soubor přes Direct Message (DM) nebo pomocí Discordu můžete mi poslat přímou zprávu nebo se připojit na můj server. Pokud preferujete e-mail, můžete mi poslat zprávu a připojit soubor jako přílohu. Těším se na vaši zprávu!
+		Můžete mě kontaktovat na Instagramu přes můj účet a zanechat mi zprávu nebo pomocí Discordu můžete mi poslat přímou zprávu. Pokud preferujete e-mail, můžete mi poslat zprávu a připojit soubor jako přílohu. Těším se na vaši zprávu!
 	</p>
 
 	<br />
@@ -46,12 +46,14 @@
 
 <style>
 	h1 {
-		color: var(--contact-color);
+		background-image: linear-gradient(var(--contact-color), var(--hover-color));
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 
 	.grid {
 		justify-content: center;
-		grid-template-columns: 13rem 13rem;
+		grid-template-columns: repeat(2, 11rem)
 	}
 
 	@media (min-width: 600px) {
