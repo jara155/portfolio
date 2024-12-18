@@ -1,13 +1,15 @@
 <script>
+	import Stitek from "./Stitek.svelte";
+
 	export let img;
-	export let color;
 	export let title = "";
 	export let year = "";
 	export let desc = "";
 	export let link = "";
+	export let stitky = []
 </script>
 
-<main class="container" style="border-bottom-color: {color};">
+<main class="container">
 	<img src="{img}" alt="{title}-logo" />
 	<h2>{title}</h2>
 	<p>{year}</p>
@@ -15,13 +17,15 @@
 	<footer>
 		<a href="https://{link}" target="_blank">{link}</a>
 	</footer>
+	{#each stitky as stitek}
+		<Stitek title={stitek[0]} />
+	{/each}
 </main>
 
 <style>
 
 	.container {
-		width: 260px;
-		height: 360px;
+		background-color: var(--bg);
 		margin-inline: 10px;
 	}
 
@@ -63,7 +67,7 @@
 
 	p {
 		background-color: #373739;
-		border-radius: 10px;
+		border-radius: var(--radius);
 		margin-bottom: 9px;
 	}
 
@@ -76,7 +80,6 @@
 		margin-top: 0;
 		margin-inline: 10px;
 		margin-bottom: 2px;
-		font-size: 20px;
 		color: #eeeeee;
 	}
 

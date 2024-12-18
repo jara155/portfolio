@@ -11,78 +11,67 @@
 <nav>
 	<ul class="navigation">
 		{#if withName}
-			{#if screenSize < 800}
-				<h1 class="owner-name">Jája.</h1>
-			{:else}
-				<a href="/">
-					<h1 class="owner-name">Jája.</h1>
-				</a>
-			{/if}
+			<a href="/">
+				<h1 class="owner-name">Jája<span>.</span></h1>
+			</a>
 		{/if}
 		<li>
 			<ul class="navigation-sections">
 				<li>
-					<a href="/">
-						<h2>Domů</h2>
+					<a href="#about">
+						<h3>About</h3>
 					</a>
 				</li>
 				<li>
-					<a href="/services">
-						<h2 style="color:var(--services-color)">Služby</h2>
-					</a>
-				</li>
-				<li>
-					<a href="/projects">
-						<h2 style="color:var(--projects-color)">Projekty</h2>
+					<a href="#projects">
+						<h3 id="projects">Projects</h3>
 					</a>
 				</li>
 				<li>
 					<a href="/contact">
-						<h2 style="color:var(--contact-color)">Kontakt</h2>
+						<h3>Contact</h3>
 					</a>
 				</li>
 			</ul>
 		</li>
-		{#if withSocialMedia && screenSize > 600}
-			<li class="social-medias">
-				<SocialMedia />
-			</li>
-		{/if}
 	</ul>
 </nav>
 
 <style>
+
+	nav {
+		position: relative;
+		z-index: 100;
+		background-color: rgba(10, 9, 9, 0.981);
+	}
+
+	h3 {
+		font-weight: bold;
+	}
+
+	span {
+		color: white;
+	}
+
 	@media (max-width: 600px) {
 		.navigation-sections {
 			padding: 0;
 			margin-top: 5px;
-			font-size: 13px;
 		}
 	}
 
 	@media (min-width: 600px) {
+		ul {
+			margin-inline: 2rem;
+		}
+
 		h1:hover {
 			animation: shine 200ms;
 			animation-fill-mode: forwards;
 		}
 	}
 
-	p {
-		padding: 0;
-		margin: 0;
-	}
-
-	h1 {
-		text-decoration: underline;
-	}
-
-	h2 {
-		color: var(--primary-color);
-	}
-
-	/* h1:hover, */
-	h2:hover {
-		animation: shine 200ms;
-		animation-fill-mode: forwards;
+	#projects {
+		color: var(--accent);
 	}
 </style>

@@ -1,9 +1,8 @@
 <script>
 	export let title;
-	export let bgColor = "#405dac";
 </script>
 
-<main class="stitek" style="background-color: {bgColor};">
+<main class="stitek">
 	<p>{title}</p>
 </main>
 
@@ -15,9 +14,10 @@
 		height: 1.5rem;
 		justify-content: center;
 		background-color: var(--dark-primary-color);
-		border-radius: 20px;
+		border-radius: var(--radius);
 		align-items: center;
 		color: white;
+		border: 1px solid rgb(49, 48, 48);
 	}
 
 	p {

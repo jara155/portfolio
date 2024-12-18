@@ -18,16 +18,27 @@
 </main>
 
 <footer>
-	{#if screenHeight > 740 && screenWidth < 600 && $page.url.pathname != "/contact"}
-		<SocialMedia />
-	{/if}
 	<p> @ Copyright Jája {new Date().getFullYear()}</p>
 	<p> All rights reserved</p>
+	<!-- <li class="social-medias"> -->
+		<SocialMedia />
+	<!-- </li> -->
 </footer>
 
 <style>
 	p {
 		margin-top: 0;
 		margin-bottom: 0; 
+	}
+
+	@media (min-width: 600px) {
+		header {
+			position: fixed;
+		}
+	}
+	
+	header {
+		top: 0;
+		width: 100%;
 	}
 </style>

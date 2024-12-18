@@ -30,10 +30,21 @@
 	
 	}
 
-/* 
-	.discord {
+	.social-media-row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
+	.ig {
+		color: var(--accent);
+	}
+
+	.discord {
+		color: rgb(48, 68, 222);
+	}
+
+/*
 	.discord-nick {
 		width: 10px;
 		opacity: 0;

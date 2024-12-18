@@ -26,20 +26,12 @@
 			margin: auto;
 			margin-bottom: 20px;
 		}
-
-		h2 {
-			font-size: 20px;
-		}
 	}
 
 	@media (min-width: 600px) {
 		.container {
 			margin: 7px;
 			width: 15em;
-		}
-
-		h2 {
-			font-size: 25px;
 		}
 	}
 
@@ -51,7 +43,6 @@
 		margin-top: 15px;
 		margin-inline: 10px;
 		margin-bottom: 0px;
-		font-size: 23px;
 		color: #eeeeee;
 	}
 

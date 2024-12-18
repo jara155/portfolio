@@ -76,14 +76,14 @@
 		border-left: var(--primary-color) 3px solid;
 		margin-bottom: 15px;
 		padding: 10px;
-		border-radius: 3px;
+		border-radius: var(--radius);
 	}
 
 	img {
 		width: 100px;
 		margin: auto;
 		margin-bottom: 5px;
-		border-radius: 8px;
+		border-radius: var(--radius);
 	}
 
 	a {
@@ -100,7 +100,6 @@
 	}
 
 	h2 {
-		font-size: 12px;
 		text-align: start;
 		margin-bottom: 0.25em;
 		margin-top: 0;
