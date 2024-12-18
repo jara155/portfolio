@@ -219,7 +219,7 @@
 						<i class=""></i>
 					</a>
 					<div claas="info">
-						<Card title={"2023-2023"} subtitle={"Minecraft Developer"} desc={"I held the position of Developer on the Minecraft server AlteraCraft. As part of the team, I focused on developing custom plugins and creating the website."} stitky={[["Yaml"], ["Java"]]}/>
+						<Card title={"2023-2024"} subtitle={"Minecraft Developer"} desc={"I held the position of Developer on the Minecraft server AlteraCraft. As part of the team, I focused on developing custom plugins and creating the website."} stitky={[["Yaml"], ["Java"]]}/>
 					</div>
 				</div>
 
@@ -228,7 +228,7 @@
 						<i class="fa-solid fa-up-right-from-square"></i>
 					</a>
 					<div claas="info">
-						<Card title={"2022-2023"} subtitle={"Minecraft Administrator"} desc={"I worked as a Minecraft administrator on the BasicLand server, focusing on editing configuration files and managing server settings."} stitky={[["Yaml"]]}/>
+						<Card title={"2022-2023"} subtitle={"Minecraft Administrator"} desc={"I worked as a Minecraft administrator on the BasicLand.cz, focusing on editing configuration files and managing server settings."} stitky={[["Yaml"]]}/>
 					</div>
 				</div>
 				
@@ -237,7 +237,7 @@
 						<i class=""></i>
 					</a>
 					<div claas="info">
-						<Card title={"2022-2022"} subtitle={"FiveM Developer"} desc={"I contributed as a helper on the NemesisRP server, where my responsibilities included creating custom scripts and enhancing gameplay."} stitky={[["LUA"]]}/>
+						<Card title={"2022-2022"} subtitle={"FiveM Developer"} desc={"I contributed as a helper on the NemesisRP, where my responsibilities included creating custom scripts and enhancing gameplay."} stitky={[["LUA"]]}/>
 					</div>
 				</div>
 				
@@ -274,17 +274,20 @@
 <style>
 	header {
 		z-index: 1;
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		width: 100vw;
-		height: 100vh;
-		margin-bottom: 5rem;
-		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.01)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
+		background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.015)'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e");
 	}
 
 	@media (max-width: 600px) {
 		/* Mobile */
+
+		header {
+			height: 70vw;
+		}
 
 		#about {
 			display: flex;
@@ -332,6 +335,8 @@
 		/* Desktop */
 		header {
 			display: flex;
+			height: 100vh;
+			margin-bottom: 5rem;
 		}
 
 		.name {
@@ -384,7 +389,7 @@
 		}
 
 		#projects {
-			width: 40%;
+			width: 35%;
 			margin: auto;
 		}
 	}
@@ -426,6 +431,7 @@
 	}
 
 	.vertical-line {
+		z-index: -1;
 		position: absolute;
 		top: 0;
 		left: 50%;

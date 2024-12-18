@@ -35,7 +35,7 @@
 
 <style>
     main {
-        z-index: 10;
+        z-index: -1;
         position: relative;
         border-bottom: 2px solid var(--accent);
         border-radius: var(--radius);
