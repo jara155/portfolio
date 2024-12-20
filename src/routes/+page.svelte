@@ -1,13 +1,13 @@
 <script>
 	import { fade, fly } from 'svelte/transition';
-	import ContainerWithYear from '../components/ContainerWithYear.svelte';
-	import Carousel from '../components/Carousel.svelte';
 	import Card from '../components/Card.svelte';
 
 	let isInViewAbout;
 	let isInViewExperiences;
 	let isInViewProjects;
+	let isInViewContact;
 	import { inview } from 'svelte-inview';
+	import Container from '../components/Container.svelte';
 </script>
 
 <main>
@@ -260,14 +260,36 @@
 	  isInViewProjects = detail.inView;
 	}}>&nbsp;</h2>
 	{#if isInViewProjects}	
-		<h2>Projects</h2>
-		<section id="projects" in:fade={{delay: 500}}>
+	<section id="projects" in:fade={{delay: 500}}>
+			<h2><span>My</span> Projects</h2>
 			<Card title={"JajaDungeons"} desc={"A Minecraft plugin, packed with powerful features, this plugin is perfect for creating dynamic, replayable challenges that keep players coming back for more."} img={"https://www.spigotmc.org/data/resource_icons/118/118699.jpg?1722987602"} stitky={[["Java"]]} link={"https://www.spigotmc.org/resources/118699/"}/>
 			<Card title={"JajaSell"} desc={"A Minecraft plugin, designed specifically for bulk item transactions. This plugin offers players a fast and efficient way to sell their items while providing server admins with control over pricing and mechanics."} img={"https://www.spigotmc.org/data/resource_icons/109/109528.jpg?1712446529"} stitky={[["Java"]]} link={"https://www.spigotmc.org/resources/109528/"}/>
 			<Card title={"Audio Player"} desc={"This app is designed to play audio directly from external storage while offering features for the ultimate listening experience."} img={"project-icons/audio-player.png"} stitky={[["Flutter"]]} link={"https://github.com/jara155/Audio-Player"}/>
 			<Card title={"Reminder"} desc={"A application inspired by Reminders in Mac OS, designed to sync all your lists and reminders with a MySQL database. This app provides intuitive interface for managing your to-dos and accessible across devices."} img={"project-icons/reminder.png"} stitky={[["Flutter"]]} link={"https://github.com/jara155/Reminder"}/>
 			<Card title={"Terminal"} desc={"A tool to customize terminal and install addons."} img={"project-icons/reminder.png"} stitky={[["Bash"]]} link={"https://github.com/jara155/terminal"}/>
 		</section>
+	{/if}
+
+	<h2 use:inview={{ unobserveOnEnter: true, rootMargin: "-10%" }}
+	on:change={({ detail }) => {
+	  isInViewContact = detail.inView;
+	}}>&nbsp;</h2>
+	{#if isInViewContact}	 
+		<section id="contact">
+				<h4 style="color: rgba(255, 255, 255, .85);">Get in Touch</h4>
+				<h2>Let’s <span>Craft</span> Software Together</h2>
+				<p>Have an idea or project in mind? Let’s collaborate and turn your vision into something exceptional. Reach out, and let’s craft something great together!</p>
+
+				<div class="colaboration">
+					<a href="mailto:jaja155@protonmail.com">
+						<Card title="E-Mail" desc="Response time: Within 24 hours" />
+					</a>
+					<a href="https://discord.gg/6M7pn5KMMt">
+						<Card title="Discord" desc="Response time: Within 24 hours"  />
+					</a>
+
+				</div>
+			</section>
 	{/if}
 </main>
 
@@ -392,6 +414,14 @@
 			width: 35%;
 			margin: auto;
 		}
+
+		.colaboration {
+			display: flex;
+			margin-top: 1.5rem;
+			justify-content: center;
+			gap: 2rem;
+		}
+
 	}
 
 	span {
@@ -465,10 +495,27 @@
 		grid-template-columns: repeat(2, minmax(0, 30rem));
 	}
 
-	#projects, #experiences {
+	#projects, #experiences, #contact {
 		display: grid;
 		justify-content: center;
 		align-items: center;
+	}
+
+	#projects {
+		margin-bottom: 6rem;
+		margin-left: auto;
+	}
+
+ 	#contact {
+		/* margin-bottom: 6rem; */
+	}
+
+	#contact > p {
+		max-width: 50rem;
+	}
+
+	#contact > h2 {
+		margin-top: 0;
 	}
 
 	#skills {

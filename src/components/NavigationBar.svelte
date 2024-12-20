@@ -24,11 +24,11 @@
 				</li>
 				<li>
 					<a href="#projects">
-						<h3 id="projects">Projects</h3>
+						<h3 class="projects">Projects</h3>
 					</a>
 				</li>
 				<li>
-					<a href="/contact">
+					<a href="#contact">
 						<h3>Contact</h3>
 					</a>
 				</li>
@@ -71,7 +71,7 @@
 		}
 	}
 
-	#projects {
+	.projects {
 		color: var(--accent);
 	}
 </style>

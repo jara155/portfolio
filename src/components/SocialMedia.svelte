@@ -1,4 +1,4 @@
-<main class="social-media-row">
+<main>
 	<a href="https://www.instagram.com/jajaa.dart/" target="_blank">
 		<i class="fa-brands fa-instagram social-media ig" />
 	</a>
@@ -26,12 +26,18 @@
 	}
 
 	img {
-		width: 48px;
+		width: 64px;
 	
 	}
 
-	.social-media-row {
+	i {
+		font-size: 2em;
+		margin-inline: .4rem;
+	}
+	
+	main {
 		display: flex;
+		margin-top: .5rem;
 		justify-content: center;
 		align-items: center;
 	}

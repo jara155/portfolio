@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap') */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap'); */
 html {
     scroll-behavior: smooth;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 body {
-    width: 100vw;
-    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: Poppins;
-   
+
     background-color: rgb(10 10 10);
     color: white;
 }
 
 :root {
-    color-scheme: light;
+    color-scheme: dark;
 
     --accent: rgb(255, 0, 98);
     --bg: rgb(10 10 10);
@@ -47,7 +47,7 @@ body {
     }
 
     h4 { 
-        font-size: 17px;
+        font-size: 19px;
         margin-inline: .5rem;
         margin-block: 0;
         text-align: center;
@@ -68,12 +68,6 @@ body {
     .navigation-sections {
         display: flex;
         justify-content: center;
-    }
-
-    .social-media-row {
-        height: 3em;
-        justify-content: center;
-        text-align: center;
     }
 }
 
@@ -118,11 +112,6 @@ body {
     .navigation-sections {
         margin: 10px;
     }
-
-    .social-media-row {
-        padding: 17px;
-        margin-top: 17px;
-    }
 }
 
 footer {
@@ -158,28 +147,6 @@ p {
     justify-content: center;
 }
 
-.grid {
-    display: grid;
-}
-
-.columns {
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    text-align: center;
-}
-
-.container {
-    text-align: center;
-    background-color: #242424;
-    border-radius: var(--radius);
-    border-bottom: var(--primary-color) 3px solid;
-    border-radius: var(--radius);
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: 10px 15px;
-}
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -205,17 +172,6 @@ li {
     color: var(--accent);
     font-size: 3em;
     margin: 10px;
-}
-
-.social-media {
-    padding: 7px;
-    font-size: 2em;
-    color: var(--dark-primary-color);
-}
-
-.social-media:hover {
-    animation: shine 200ms;
-    animation-fill-mode: forwards;
 }
 
 @keyframes shine {

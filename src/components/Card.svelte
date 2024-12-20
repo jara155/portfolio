@@ -13,7 +13,7 @@
     {#if link}
         <div class="title">
             <img src="{img}" alt="">
-            <h3>{title}</h3>
+            <h3 style="color: white;">{title}</h3>
             <a href="{link}">
                 <i style="color: var(--accent);" class="fa-solid fa-up-right-from-square"></i>
             </a> 
@@ -40,7 +40,7 @@
         border-bottom: 2px solid var(--accent);
         border-radius: var(--radius);
         padding: 1.5rem;
-        background-color: rgb(13, 13, 13);
+        background-color: var(--fg);
         margin-bottom: 2rem;
     } 
 
