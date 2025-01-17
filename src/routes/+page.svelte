@@ -270,12 +270,12 @@
 		</section>
 	{/if}
 
+	<section id="contact">
 	<h2 use:inview={{ unobserveOnEnter: true, rootMargin: "-10%" }}
 	on:change={({ detail }) => {
 	  isInViewContact = detail.inView;
 	}}>&nbsp;</h2>
 	{#if isInViewContact}	 
-		<section id="contact">
 				<h4 style="color: rgba(255, 255, 255, .85);">Get in Touch</h4>
 				<h2>Let’s <span>Craft</span> Software Together</h2>
 				<p>Have an idea or project in mind? Let’s collaborate and turn your vision into something exceptional. Reach out, and let’s craft something great together!</p>
@@ -284,13 +284,13 @@
 					<a href="mailto:jaja155@protonmail.com">
 						<Card title="E-Mail" desc="Response time: Within 24 hours" />
 					</a>
-					<a href="https://discord.gg/6M7pn5KMMt">
+					<a href="https://discord.gg/6M7pn5KMMt" target="_blank">
 						<Card title="Discord" desc="Response time: Within 24 hours"  />
 					</a>
 
 				</div>
-			</section>
-	{/if}
+				{/if}
+	</section>
 </main>
 
 <style>

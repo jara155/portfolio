@@ -42,7 +42,7 @@
 	nav {
 		position: relative;
 		z-index: 15;
-		background-color: rgba(10, 9, 9, 0.6);
+		background-color: rgba(10, 9, 9, 0.75);
 	}
 
 	h3 {

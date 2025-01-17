@@ -1,5 +1,10 @@
+<script>
 
-<main>
+	import { fade } from "svelte/transition";
+
+</script>
+
+<main in:fade={{delay: 300}}>
     <h1>404</h1>
     <h2>WE ARE SORRY, BUT THE PAGE YOU REQUESTED NOT FOUND</h2>
     

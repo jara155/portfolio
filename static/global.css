@@ -12,6 +12,7 @@ body {
     padding: 0;
     font-family: Poppins;
 
+    overflow-x: hidden;
     background-color: rgb(10 10 10);
     color: white;
 }
@@ -117,6 +118,7 @@ body {
 footer {
     position: sticky;
     top: 100%;
+    margin-top: 1rem;
     margin-bottom: 10px;
 }
 
@@ -160,7 +162,6 @@ li {
 
 .navigation {
     padding: 0;
-    justify-self: center;
     justify-content: space-between;
 }
 
@@ -193,4 +194,24 @@ a::hover {
     animation: shine 200ms;
 
     animation-fill-mode: forwards;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--fg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: var(--radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }

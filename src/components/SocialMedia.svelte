@@ -2,11 +2,9 @@
 	<a href="https://www.instagram.com/jajaa.dart/" target="_blank">
 		<i class="fa-brands fa-instagram social-media ig" />
 	</a>
-	<i class="fa-brands fa-discord social-media discord" />
-	<!-- <div class="discord">
-		<i class="fa-brands fa-discord social-media" />
-		<p class="discord-nick">jája#4224</p>
-	</div> -->
+	<a href="https://discord.gg/6M7pn5KMMt" target="_blank">
+		<i class="fa-brands fa-discord social-media discord" />
+	</a>
 	<a href="https://github.com/jara155" target="_blank">
 		<i class="fa-brands fa-github social-media github" />
 	</a>
